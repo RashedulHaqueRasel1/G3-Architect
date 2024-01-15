@@ -133,8 +133,92 @@ main {
     font-weight: 700;
 }
 
+
+/* features section style Start here */
+.features {
+    display: flex;
+}
+
+.features-years-btn {
+    background: #FF900E;
+    padding: 1px;
+}
+
+.features-years-btn h3 {
+    color: #FFF;
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 65px;
+    font-weight: 700;
+    line-height: 70px;
+    /* 107.692% */
+}
+
+.features-years-btn p {
+    color: #FFF;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 40px;
+}
+
+.features-content {
+    margin-top: 170px;
+}
+
+.features-title-section {
+    border-left: 5px solid #FF900E;
+    padding: 0 21px;
+    color: var(--Dark-01, #131313);
+    font-size: 45px;
+    margin: 0;
+    font-weight: 700;
+}
+
+.features-text-description {
+    color: var(--Dark-03, #727272);
+    font-weight: 400;
+    margin: 0;
+    margin-top: 24px;
+    width: 80%;
+}
+
+.features-card {
+    width: 76%;
+    margin: 30px 300px 10px 33px;
+
+}
+
+.features-card h4 {
+    color: var(--Dark-01, #131313);
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 30px;
+    margin: 0;
+}
+
+.features-card p {
+    color: var(--Dark-03, #727272);
+    font-size: 16px;
+    /* margin: 0; */
+    padding-top: 10px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.features-img {
+    border: 3px solid blueviolet;
+    margin-top: 130px;
+    border-radius: 8px;
+}
+
+/* features section style End here */
+
+
 /* Facts Section Style Start Here */
-.facts {}
+.facts {
+    margin-top: 130px;
+}
 
 .facts-card-content {
     display: flex;
@@ -152,9 +236,31 @@ main {
 
 }
 
+.card-stats {
+    color: var(--Dark-02, #424242);
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 600;
+    margin: 0;
+    line-height: normal;
+}
+
+.card p {
+    color: var(--Dark-03, #727272);
+    font-family: Work Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    margin: 0;
+    line-height: normal;
+}
+
 /* sponspors section style start here */
 .sponspors-container {
     height: 300px;
+    margin-top: 130px;
 }
 
 .sponspors-content {
@@ -171,28 +277,16 @@ main {
 
 /* Footer section style Start here */
 .footer-content {
-    border: 1px solid salmon;
     text-align: center;
 }
 
-.card-stats {
+.footer-content {
     color: var(--Dark-02, #424242);
     text-align: center;
     font-family: Work Sans;
-    font-size: 45px;
-    font-style: normal;
-    font-weight: 600;
-    margin: 0;
-    line-height: normal;
-}
-
-.card p{
-    color: var(--Dark-03, #727272);
-    font-family: Work Sans;
     font-size: 20px;
     font-style: normal;
-    font-weight: 600;
-    margin: 0;
+    font-weight: 400;
     line-height: normal;
 }
 
@@ -215,6 +309,16 @@ main {
 
     .teams-img-container {
         grid-template-columns: 1fr;
+    }
+
+    .features,
+    .facts-card-content {
+        flex-direction: column;
+    }
+
+    .sponspors-img {
+        flex-direction: column;
+        padding: 20px;
     }
 }
 
